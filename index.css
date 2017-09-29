@@ -1,0 +1,32 @@
+body {
+  background-attachment: #ecf0f1;
+}
+
+nav {
+  background-color: white !important;
+}
+
+.smaller-image {
+  width : 25%;
+}
+
+.thumbnail {
+  text-align : center;
+  margin : 0% 10% 0% 10%;
+  padding-top: 20%;
+}
+
+.img-responsive .centree {
+  margin: 0 auto;
+}
+
+.jumbotron {
+  padding-top: 9% !important;
+  color: white !important;
+  background-color: white !important;
+}
+
+.form-group {
+  margin : 0% 25% 0% 25%;
+  padding-top: 3%;
+}
