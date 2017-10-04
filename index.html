@@ -16,15 +16,15 @@
 
 
   <title>Google</title>
-  <link rel="icon" type="image/png" href="logo_ico.png" />
+  <link rel="icon" type="image/png" href="favico.png"/>
 
 </head>
 <body>
 
-<!-- bouton initialize -->
-  <button class="button-initialize">Cliquez-moi !</button>
+  <!-- bouton initialize -->
+  <button type="button" class="btn btn-primary btn-lg " id="button-initialize">AFFICHER LES ÉLÉMENTS CENTRAUX</button>
 
-  <main>
+  <section>
 
     <!--NavBar-->
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
@@ -61,8 +61,9 @@
       <div class="container">
         <!--div class="col-xs-12" => à ajouter ?!-->
           <img class="smaller-image img-responsive center-block" src="logo_google_france.png">
+
           <div class="form-group">
-              <input type="text" class="form-control" id="exampleFormControlInput1">
+              <input type="text" id="mots_clefs" class="form-control" id="exampleFormControlInput1">
           </div>
           <div class="boutons">
             <button class="btn" role="button">Recherche google </button>
@@ -70,29 +71,18 @@
           </div>
       </div>
     </div>
-</main>
 
-  <!-- TODO Footer -->
-<footer>
-  <div class="footer1">
-    <p>Publicité</p>
-    <p>Entreprise</p>
-    <p>Confidentialité</p>
-  </div>
-  <div class="footer2">
-    <p>A propos</p>
-    <p>Publicité</p>
-    <p>Conditions</p>
-    <p>Paramètres</p>
-  </div>
-</footer>
 
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <!-- Js -->
-  <script src="index.js"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Js -->
+    <script src="main.js"></script>
+
+  </section>
+
+
 
 </body>
 </html>
