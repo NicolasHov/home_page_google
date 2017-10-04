@@ -1,3 +1,5 @@
+<!-- TODO checker le cross-navigateur -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +11,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="index.js"></script>
-
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -21,47 +19,59 @@
 </head>
 <body>
 
-  <!--NavBar-->
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">Gmail</a>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Images <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Button</a>
-      </li>
-    </ul>
-  </div>
-  </nav>
+<!-- bouton initialize -->
+  <button class="button-initialize">Cliquez-moi !</button>
 
-  <!--container principal-->
-  <div class="jumbotron text-center">
-    <div class="container">
-      <!--div class="col-xs-12" => à ajouter ?!-->
-        <img class="smaller-image img-responsive center-block" src="http://www.underconsideration.com/brandnew/archives/google_2015_logo_detail.png">
-        <div class="form-group">
-            <input type="text" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <div">
-          <button class="btn" role="button">Recherche google </button>
-          <button class="btn" role="button">J'ai de la chance </button>
-        </div>
-      <!--/div-->
+  <main>
+    <!--NavBar-->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Gmail</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Images <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Button</a>
+        </li>
+      </ul>
     </div>
-  </div>
+    </nav>
 
-  <!-- Footer -->
-  <Footer>dsqdsq</Footer>
+    <!--container principal-->
+    <div class="jumbotron text-center">
+      <div class="container">
+        <!--div class="col-xs-12" => à ajouter ?!-->
+          <img class="smaller-image img-responsive center-block" src="logo_google_france.png">
+          <div class="form-group">
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+          </div>
+          <div class="boutons">
+            <button class="btn" role="button">Recherche google </button>
+            <button class="btn" role="button">J'ai de la chance </button>
+          </div>
+      </div>
+    </div>
+</main>
+
+  <!-- TODO Footer -->
+<footer>
+  <p>Publicité</p>
+  <p>Entreprise</p>
+  <p>Confidentialité</p>
+  <p>A propos</p>
+  <p>Publicité</p>
+</footer>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!-- Js -->
+  <script src="index.js"></script>
 
 </body>
 </html>
