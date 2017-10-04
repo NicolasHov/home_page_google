@@ -16,6 +16,8 @@
 
 
   <title>Google</title>
+  <link rel="icon" type="image/png" href="logo_ico.png" />
+
 </head>
 <body>
 
@@ -23,19 +25,32 @@
   <button class="button-initialize">Cliquez-moi !</button>
 
   <main>
+
     <!--NavBar-->
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
+    <!-- bouton responsive -->
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Gmail</a>
+
+    <a class="navbar-brand" href="#"></a>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Gmail <span class="sr-only">(current)</span></a>
+        </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Images <span class="sr-only">(current)</span></a>
         </li>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <img src="google_logo.jpg" width="30" height="30" class="d-inline-block align-top" alt=""><span class="sr-only">(current)</span></a>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Button</a>
+          <a class="nav-link" href="#">
+            <button type="button" class="btn btn-primary">Connexion</button>
+          </a>
         </li>
       </ul>
     </div>
@@ -59,11 +74,17 @@
 
   <!-- TODO Footer -->
 <footer>
-  <p>Publicité</p>
-  <p>Entreprise</p>
-  <p>Confidentialité</p>
-  <p>A propos</p>
-  <p>Publicité</p>
+  <div class="footer1">
+    <p>Publicité</p>
+    <p>Entreprise</p>
+    <p>Confidentialité</p>
+  </div>
+  <div class="footer2">
+    <p>A propos</p>
+    <p>Publicité</p>
+    <p>Conditions</p>
+    <p>Paramètres</p>
+  </div>
 </footer>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->

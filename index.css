@@ -52,30 +52,44 @@ p {
   padding-top: 3%;
 }
 
-/*.boutons btn {
-  color: #8F8F8F !important;
-}*/
 
 .form-group input {
-  box-shadow: 0px 2px 2px #c1baba;
+  /*box-shadow: 0px 2px 2px #c1baba;*/
 }
 
-/* footer : infos prises sur le site http://www.cefii.fr/blog/18-blog-cefii/d%C3%A9veloppement/50-astuce-html-css-fixer-footer-bas-page.html*/
 footer {
   background: #F2F2F2;
   border: 1 px solid grey
-  position: absolute;
+  /*position: absolute;*/
   heigth:30px; // on définit une taille en px
   max-height: 30px; // pas plius
   overflow: hidden; //cacher ce qui dépasse
   width: 100%;
+  font-family: arial,sans-serif;
 }
 
 footer {
   display: flex !important;
   flex-direction: row;
-  align-content: space-around;
-  /*justify-content: space-around;*/
+  justify-content: space-between;
+
+  font-size: 15px !important;
+}
+
+.footer1 {
+  margin-left: 2%;
+  width: 30%;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer2 {
+  margin-right: 2%;
+  width: 30%;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 footer p {
