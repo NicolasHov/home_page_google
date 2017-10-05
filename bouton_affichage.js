@@ -11,4 +11,9 @@ $(document).ready(function(){
     $("#button-initialize").hide();
     $('section').show();
   });
+
+  $("#generateur").click(function(){
+    // window.location.replace("/generateur_grille.html");
+    window.location.href = "generateur_grille.html";
+  });
 })
