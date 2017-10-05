@@ -1,26 +1,48 @@
 $(document).ready(function(){
 
+
 // initialisation
   // show button + hide body
   $("#button-initialize").show();
   $('section').hide();
   $("footer").hide();
 
-// TODO on button click : hide button + show body
   $("#button-initialize").click(function(){
-    // $("#button-initialize").fadeIn();
+    // fadeIn "n'existe pas.." $("#button-initialize").fadeIn();
     // $("#button-initialize").fadeIn("slow");
     // $("#button-initialize").fadeIn(3000);
     $("#button-initialize").hide();
     $('section').show();
     $("footer").show();
-
   });
 
-// $("#mots_clefs").val(localStorage.mots_clefs);
-//
-//   $(window).unload(saveSettings);
-//             loadSettings();
+// TODO :
+// store les mots clefs pour lancer des recherches
+// localStorage.mots_clefs = mots_clefs;
+
+// affiche le resultats dans un alert
+  // $("#recherche").click(function(){
+  //   // $("#mots_clefs").val(localStorage.mots_clefs);
+  //   alert("Value: " + mots_clefs);
+  // })
+
+
+  // récupéré sur https://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html
+  // Détection du support
+
+  if(typeof sessionStorage!='undefined') {
+    if("mots_clefs" in sessionStorage) {
+      alert("Message récupéré");
+      $("mots_clefs").value = sessionStorage.getItem("mots_clefs");
+    }
+  } else {
+    alert("sessionStorage n'est pas supporté");
+  }
+
+  $("#recherche").click(function(){
+    var mots_clefs = sessionStorage.getItem("mots_clefs")
+    alert("Value: " + mots_clefs);
+  });
 })
 
 
@@ -32,5 +54,3 @@ $(document).ready(function(){
 // $("html").onclick = function() {
 //     alert('Aïe, arrêtez de cliquer !!');
 // }
-//
-// });
