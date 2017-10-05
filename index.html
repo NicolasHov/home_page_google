@@ -11,10 +11,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-
   <title>Google</title>
   <link rel="icon" type="image/png" href="favico.png"/>
 
@@ -22,10 +18,10 @@
 <body>
 
   <!-- bouton initialize -->
-  <button type="button" class="btn btn-primary btn-lg " id="button-initialize">AFFICHER LES ÉLÉMENTS CENTRAUX</button>
+  <button type="button-initialize" class="btn btn-primary btn-lg " id="button-initialize">AFFICHER LES ÉLÉMENTS CENTRAUX</button>
 
   <section>
-
+  pensez à activer les scripts js pour réactiver les animations !!
     <!--NavBar-->
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 
@@ -63,7 +59,7 @@
           <img class="smaller-image img-responsive center-block" src="logo_google_france.png">
 
           <div class="form-group">
-            <input type="text" id="mots_clefs exampleFormControlInput1" class="form-control">
+            <input type="text" id="mots_clefs" class="form-control">
           </div>
           <div class="boutons">
             <button class="btn" id="recherche" role="button">Recherche google </button>
@@ -77,8 +73,12 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
     <!-- Js -->
-    <script src="main.js"></script>
+    <!-- <script src="bouton_affichage.js"></script> -->
+    <!-- <script src="redirection_google.js"></script> -->
+    <script src="popup.js"></script>
+    <!-- <script src="generateur_grille.js"></script> -->
 
   </section>
 
